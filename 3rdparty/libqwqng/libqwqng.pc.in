@@ -1,0 +1,14 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+libftdi_libs=@LIBFTDI_LIBS@
+libftdi_cflags=@LIBFTDI_CFLAGS@
+
+Name: libqwqng
+Description: Library to interface with Comscire QNG devices
+Requires:
+Version: @VERSION@
+Libs: -L${libdir} -lqwqng ${libftdi_libs}
+Cflags: -I${includedir} ${libftdi_cflags}
+
